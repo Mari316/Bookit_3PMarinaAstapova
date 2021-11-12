@@ -7,6 +7,7 @@ import com.bookit.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class UIStepDefs {
     SignInPage signInPage =new SignInPage();
@@ -40,6 +41,9 @@ public class UIStepDefs {
         UIteam = selfPage.team.getText();
 
         System.out.println("UIcampus = " + UIcampus);
+        String expectedName = "Ase Norval";
+        String actualName = UIname;
+        Assert.assertEquals(expectedName,actualName);
 
 
     }

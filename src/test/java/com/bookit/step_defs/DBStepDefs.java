@@ -3,6 +3,7 @@ package com.bookit.step_defs;
 import com.bookit.utilities.DBUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 
 import java.util.Map;
@@ -26,11 +27,12 @@ public class DBStepDefs {
         System.out.println("dbMap.toString() = " + dbMap.toString());
 
 
+
     }
 
     @Then("User gets DB info")
     public void user_gets_DB_info() {
-        System.out.println("We good");
+       // Assert.assertEquals();
     }
 
 }
